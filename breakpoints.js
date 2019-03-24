@@ -31,3 +31,18 @@ const myMap = numbers.map((num)=>{
 
 // Node Removal: Triggered when the currently-selected node is removed.
 
+
+// ===================== Event Listeners Breakpoints
+
+    // Expand the Event Listener Breakpoints pane. DevTools shows a list of event categories, such as Animation.
+    // For things like MouseOver, click events, etc.
+
+
+// ===================== Function BreakPoints
+
+function sum(a, b) {
+    let result = a + b; // DevTools pauses on this line.
+    return result;
+  }
+  debug(sum); // Pass the function object, not a string.
+  sum();
