@@ -101,6 +101,7 @@ Reference: https://developers.google.com/web/tools/chrome-devtools/console/api
 * JSLint: 
     * http://www.jslint.com (on web) 
     * In Visual Studio Code: https://www.npmjs.com/package/jslint
+    
     ```
     $ npm i jslint
     ```
