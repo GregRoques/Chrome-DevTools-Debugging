@@ -42,14 +42,17 @@ Ensuring the target function is in scope can be tricky if you're calling debug()
 * Trigger the breakpoint.
 * Call debug() in the DevTools Console while the code is still paused on your line-of-code breakpoint.
 
+
 ## Console API Reference
 
 Reference: https://developers.google.com/web/tools/chrome-devtools/console/api
 
 * console.log() 
   * outputs a message to the web console
+  
 * console.dir()
   * shows JSON list of properties of a JS object
+  
 * console.assert()
   * Writes an error to the console when expression evaluates to false.
   
@@ -77,6 +80,7 @@ Reference: https://developers.google.com/web/tools/chrome-devtools/console/api
 
 * console.table()
   * Logs an Array of objects as a table
+  
 * console.time()
   * Starts a new timer. Call console.timeEnd([label]) to stop the timer and print the elapsed time to the Console.
   
