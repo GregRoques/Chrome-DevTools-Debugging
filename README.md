@@ -41,3 +41,39 @@ Ensuring the target function is in scope can be tricky if you're calling debug()
 * Set a line-of-code breakpoint somewhere where the function is in scope.
 * Trigger the breakpoint.
 * Call debug() in the DevTools Console while the code is still paused on your line-of-code breakpoint.
+
+## Console API Reference
+
+Reference: https://developers.google.com/web/tools/chrome-devtools/console/api
+
+* console.log() 
+  * outputs a message to the web console
+* console.dir()
+  * shows JSON list of properties of a JS object
+* console.assert('Writes an error to the console when expression evaluates to false.')
+      ```
+      Ex: 
+        const x = 5;
+        const y = 3;
+        const reason = 'x is expected to be less than y';
+        console.assert(x < y, {x, y, reason});
+      ```
+* console.group('Visually groups messages together until console.groupEnd(label) is called. Use console.groupCollapsed(label) to collapse the group when it's initially logged to the Console.')
+        Ex:
+            const label = 'Adolescent Irradiated Espionage Tortoises';
+            console.group(label);
+            console.info('Leo');
+            console.info('Mike');
+            console.info('Don');
+            console.info('Raph');
+            console.groupEnd(label);
+console.table ('Logs an Array of objects as a table')
+console.time('Starts a new timer. Call console.timeEnd([label]) to stop the timer and print the elapsed time to the Console.')
+    Ex:
+        console.time();
+        for (var i = 0; i < 100000; i++) {
+        let square = i ** 2;
+        }
+        console.timeEnd();
+
+
