@@ -43,6 +43,7 @@ Ensuring the target function is in scope can be tricky if you're calling debug()
 * Call debug() in the DevTools Console while the code is still paused on your line-of-code breakpoint.
 
 
+
 ## Console API Reference
 
 Reference: https://developers.google.com/web/tools/chrome-devtools/console/api
@@ -93,4 +94,13 @@ Reference: https://developers.google.com/web/tools/chrome-devtools/console/api
         console.timeEnd();   
   ```
 
+# Additional JavaScript Debugging Tools (not related to Chrome)
 
+* JSBin (debugger): https://jsbin.com/?html,output
+
+* JSLint: 
+    * http://www.jslint.com (on web) 
+    * In Visual Studio Code: https://www.npmjs.com/package/jslint
+    ```
+    $ npm i jslint
+    ```
