@@ -50,15 +50,21 @@ Reference: https://developers.google.com/web/tools/chrome-devtools/console/api
   * outputs a message to the web console
 * console.dir()
   * shows JSON list of properties of a JS object
-* console.assert('Writes an error to the console when expression evaluates to false.')
-      ```
+* console.assert()
+  * Writes an error to the console when expression evaluates to false.
+  
+```
       Ex: 
         const x = 5;
         const y = 3;
         const reason = 'x is expected to be less than y';
         console.assert(x < y, {x, y, reason});
-      ```
-* console.group('Visually groups messages together until console.groupEnd(label) is called. Use console.groupCollapsed(label) to collapse the group when it's initially logged to the Console.')
+```
+      
+* console.group()
+  * 'Visually groups messages together until console.groupEnd(label) is called. Use console.groupCollapsed(label) to collapse the group when it's initially logged to the Console.'
+  
+```
         Ex:
             const label = 'Adolescent Irradiated Espionage Tortoises';
             console.group(label);
@@ -67,13 +73,20 @@ Reference: https://developers.google.com/web/tools/chrome-devtools/console/api
             console.info('Don');
             console.info('Raph');
             console.groupEnd(label);
-console.table ('Logs an Array of objects as a table')
-console.time('Starts a new timer. Call console.timeEnd([label]) to stop the timer and print the elapsed time to the Console.')
+```
+
+* console.table()
+  * Logs an Array of objects as a table
+* console.time()
+  * Starts a new timer. Call console.timeEnd([label]) to stop the timer and print the elapsed time to the Console.
+  
+```
     Ex:
         console.time();
         for (var i = 0; i < 100000; i++) {
         let square = i ** 2;
         }
-        console.timeEnd();
+        console.timeEnd();   
+  ```
 
 
